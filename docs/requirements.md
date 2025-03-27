@@ -70,6 +70,20 @@ nltk.download('punkt')
 nltk.download('wordnet')
 ```
 
+## Baseline Code Requirements
+
+The project compares against a baseline implementation from Lab 1, which can be obtained from:
+https://github.com/ideas-labo/ISE-solution/tree/main/lab1
+
+The baseline implementation has the following minimal requirements:
+- Python 3.6+
+- pandas
+- numpy
+- scikit-learn
+- nltk
+
+The baseline code has simpler requirements as it uses a Naive Bayes classifier without advanced features like word embeddings.
+
 ## Word Embeddings
 
 The classifier can optionally use pre-trained word embeddings. By default, it uses 'glove-wiki-gigaword-100' from the Gensim library, which will be automatically downloaded when first used.

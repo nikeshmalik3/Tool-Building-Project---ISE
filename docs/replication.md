@@ -91,11 +91,16 @@ Each dataset should have the following columns:
 
 ## Running the Baseline
 
-### Step 1: Navigate to the Lab 1 Directory
+### Step 1: Obtain the Lab 1 Baseline Code
+
+The baseline code is available in the official ISE-solution repository:
 
 ```bash
-cd "Lab 1"
+git clone https://github.com/ideas-labo/ISE-solution.git lab1-baseline
+cd lab1-baseline/lab1
 ```
+
+This repository contains the original Naive Bayes classifier implementation that serves as our baseline for comparison.
 
 ### Step 2: Run the Baseline Classifier on All Datasets
 

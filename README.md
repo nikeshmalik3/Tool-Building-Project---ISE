@@ -208,6 +208,7 @@ Each dataset is in CSV format with the following columns:
 - Python 3.6 or higher
 - pip package manager
 - git (for cloning the repository)
+- Baseline code from [Lab 1](https://github.com/ideas-labo/ISE-solution/tree/main/lab1)
 
 ### Installation
 
@@ -217,17 +218,22 @@ Each dataset is in CSV format with the following columns:
    cd Tool-Building-Project---ISE
    ```
 
-2. **Install dependencies**
+2. **Download the baseline code from Lab 1**
+   ```bash
+   git clone https://github.com/ideas-labo/ISE-solution.git lab1-baseline
+   ```
+
+3. **Install dependencies**
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Download NLTK resources**
+4. **Download NLTK resources**
    ```bash
    python -c "import nltk; nltk.download('stopwords'); nltk.download('punkt'); nltk.download('wordnet')"
    ```
 
-4. **Optional: Download Word Embeddings in advance**
+5. **Optional: Download Word Embeddings in advance**
    ```bash
    python -c "import gensim.downloader as api; api.load('glove-wiki-gigaword-100')"
    ```
@@ -310,4 +316,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - This project was completed as part of the Intelligent Software Engineering course.
 - Thanks to the open-source communities behind the libraries used in this project.
-- Deep learning framework communities for making their bug reports available. 
+- Deep learning framework communities for making their bug reports available.

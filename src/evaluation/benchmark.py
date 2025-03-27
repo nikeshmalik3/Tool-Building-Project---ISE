@@ -1,6 +1,9 @@
 """
 Benchmark script for comparing the performance and execution time of baseline and enhanced
 bug report classifiers across different datasets and configurations.
+
+The baseline code for comparison can be downloaded from:
+https://github.com/ideas-labo/ISE-solution/tree/main/lab1
 """
 
 import os
@@ -22,12 +25,15 @@ sys.path.append(os.path.join(project_root, 'src', 'core'))
 # Import both baseline and enhanced classifier
 try:
     # Try multiple possible paths for baseline classifier
+    # Note: The baseline classifier can be obtained from https://github.com/ideas-labo/ISE-solution/tree/main/lab1
+    # Clone the repository: git clone https://github.com/ideas-labo/ISE-solution.git lab1-baseline
     baseline_module_found = False
     possible_paths = [
         os.path.join(project_root, "Lab 1"),
         os.path.join(project_root, "Lab_1"),
         os.path.join(os.path.dirname(project_root), "Lab 1"),
-        os.path.join(os.path.dirname(project_root), "Lab_1")
+        os.path.join(os.path.dirname(project_root), "Lab_1"),
+        os.path.join(project_root, "lab1-baseline", "lab1")  # Path if cloned from GitHub
     ]
     
     for path in possible_paths:

@@ -11,6 +11,9 @@ This script serves as the central entry point for the entire system, orchestrati
 4. Running statistical tests
 5. Generating comparative analysis and visualizations
 
+The project builds upon and compares against the baseline implementation from Lab 1:
+https://github.com/ideas-labo/ISE-solution/tree/main/lab1
+
 Usage:
     python main.py [--help]
 """

@@ -27,7 +27,22 @@ git clone https://github.com/your-username/bug-report-classifier.git
 cd bug-report-classifier
 ```
 
-### Step 2: Install Dependencies
+### Step 2: Download the Lab 1 Baseline Code
+
+The project builds upon the baseline code from Lab 1, which you can download from the official repository:
+
+```bash
+git clone https://github.com/ideas-labo/ISE-solution.git lab1-baseline
+```
+
+The Lab 1 baseline code includes:
+- Basic implementation of a Naive Bayes classifier
+- Dataset preprocessing functionality
+- Initial evaluation metrics
+
+This baseline serves as a comparison point for our enhanced classifier implementation.
+
+### Step 3: Install Dependencies
 
 Install all required packages:
 
@@ -35,7 +50,7 @@ Install all required packages:
 pip install -r requirements.txt
 ```
 
-### Step 3: Download NLTK Resources
+### Step 4: Download NLTK Resources
 
 The classifier requires NLTK resources for text processing. You can download them automatically by running:
 
@@ -48,7 +63,7 @@ nltk.download('wordnet')
 
 These will be downloaded automatically when you first run the classifier, but you can also download them manually using the above command.
 
-### Step 4: Download Word Embeddings (Optional)
+### Step 5: Download Word Embeddings (Optional)
 
 If you plan to use word embeddings, they will be downloaded automatically when first running the classifier. However, this can take some time, so you might want to download them in advance:
 
